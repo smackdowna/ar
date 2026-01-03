@@ -1,6 +1,9 @@
-import ProductAR from "./components/arviewer";
+import dynamic from "next/dynamic";
 
-
+const ProductAR = dynamic(
+  () => import("./components/arviewer"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
@@ -10,12 +13,7 @@ export default function Home() {
         Tap below to see this sofa in your space with Augmented Reality.
       </p>
 
-
-        
-        <ProductAR/>
+      <ProductAR />
     </main>
   );
 }
-
-
-
