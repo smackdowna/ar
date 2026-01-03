@@ -1,9 +1,4 @@
-import dynamic from "next/dynamic";
-
-const ProductAR = dynamic(
-  () => import("./components/arviewer"),
-  { ssr: false }
-);
+import ProductAR from "./components/arviewer";
 
 export default function Home() {
   return (

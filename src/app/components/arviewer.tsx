@@ -1,4 +1,5 @@
-"use client";
+"use client";// this file is working fine, have some loading issues
+
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
