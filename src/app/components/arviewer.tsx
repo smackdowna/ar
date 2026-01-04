@@ -16,7 +16,7 @@ export default function ProductAR() {
     if (isIOS) {
       const quickLook = document.createElement("a");
       quickLook.rel = "ar";
-      quickLook.href = "/models/testImage.usdz";
+      quickLook.href = "/models/rose_bouquet.usdz";
       quickLook.click();
     } else {
       const sceneViewerUrl =
@@ -71,7 +71,7 @@ export default function ProductAR() {
 
 
       loader.load(
-        "/models/testImage.glb",
+        "/models/testImage-compressed.glb",
         (gltf) => {
           const model = gltf.scene;
           model.scale.set(1, 1, 1);
