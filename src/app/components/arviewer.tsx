@@ -16,7 +16,7 @@ export default function ProductAR() {
     if (isIOS) {
       const quickLook = document.createElement("a");
       quickLook.rel = "ar";
-      quickLook.href = "/models/rose_bouquet.usdz";
+      quickLook.href = "/models/rose_bouquet_multi.usdz";
       quickLook.click();
     } else {
       const sceneViewerUrl =
